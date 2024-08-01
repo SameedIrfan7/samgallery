@@ -2,8 +2,8 @@
 
 ## TODO
 
--[] Make it deploy
--[] Scaffold basic ui with mock data
+-[*] Make it deploy
+-[*] Scaffold basic ui with mock data
 -[] Actual setup database
 -[] Attach database to UI
 -[] Make it deploy

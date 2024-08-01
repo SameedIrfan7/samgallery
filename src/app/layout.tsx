@@ -9,12 +9,35 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
+function TopNav(){
+  return (
+    <nav className="bg-gray-800 text-white p-4">
+      <ul className="flex gap-4">
+        <li>
+          <a href="/" className="hover:text-gray-300">Sameed Irfan</a>
+        </li>
+        <li>
+          <a href="/about" className="hover:text-gray-300">About</a>
+        </li>
+        <li className="ml-auto">
+          <a href="https://github.com/SameedIrfan7" className="hover:text-gray-300">Github</a>
+        </li>
+      </ul>
+    </nav>
+  );
+}
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: { children: React.ReactNode ;}){
   return (
-    <html lang="en" className={`${GeistSans.variable}`}>
-      <body>{children}</body>
+    <html lang="en" >
+      <head>
+        <title>Gallery</title>
+      </head>
+      <body className="" >
+        <TopNav />
+        {children}
+        </body>
     </html>
   );
 }
